@@ -13,7 +13,6 @@ Define your token api or username/password for on crawl on your config/app.php<b
 ONCRAWL_KEY<br/>
 ONCRAWL_USERNAME<br/>
 ONCRAWL_PASSWORD<br/>
-
 Then, use like this:<br/>
 use OncrawlPHP\OncrawlBase;<br/>
 use OncrawlPHP\OncrawlAPI;<br/>
