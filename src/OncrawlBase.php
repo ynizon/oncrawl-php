@@ -188,7 +188,7 @@ class OncrawlBase
 			}
 		}
 		
-		if ($this->http_status != 200)
+		if ($this->http_status != 200 and $this->http_status != 422)
 		{
 			return false;
 		}
