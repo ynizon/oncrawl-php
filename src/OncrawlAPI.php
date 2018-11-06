@@ -8,7 +8,7 @@ namespace OncrawlPHP;
  * @author generated
  * @author Yohann Nizon <ynizon@gmail.com>
  * DOC --> http://developer.oncrawl.com 
- * @version 2018-04-11 11:10
+ * @version 2018-05-11 11:10
  */
 class OncrawlAPI extends OncrawlBase
 {
@@ -113,7 +113,7 @@ class OncrawlAPI extends OncrawlBase
 	*/
 	public function updateCrawlState($crawl_id, $state)
 	{
-		return $this->run(array("crawls",$crawl_id,"pilot"), 'POST', $state);
+		return $this->run(array("crawls",$crawl_id,"pilot"), 'POST', array("command"=>$state));
 	}
 	
 	/*
