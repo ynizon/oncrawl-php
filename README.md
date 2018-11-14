@@ -43,4 +43,4 @@ $OqlFields[] = array("field"=>array("parsed_html","equals","true"));
 $s = $api->getExportSEOTags($crawl_id, $fields,$OqlFields);
 <br/>
 
-Contact: ynizon@mail.com
+Contact: ynizon@gmail.com
