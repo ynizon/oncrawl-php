@@ -59,10 +59,10 @@ class OncrawlBase
 	protected $api_version = '';
 
 	/**
-	 * Url to Searchmetrics API
+	 * Url to Oncrawl API
 	 * @var string
 	 */
-	const SEARCHMETRICS_URL = 'app.oncrawl.com/api/';
+	const URL = 'app.oncrawl.com/api/';
 
 	/**
 	 * Fill token if you have one, or fill username and password
@@ -89,7 +89,7 @@ class OncrawlBase
 	 */
 	private function initToken()
 	{		
-		$url =  'http://'.self::SEARCHMETRICS_URL;
+		$url =  'http://'.self::URL;
 		$url .= $this->getApiVersion();
 		
 		$ch = curl_init();
@@ -128,7 +128,7 @@ class OncrawlBase
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
 		
-		$service_url =  'https://'.self::SEARCHMETRICS_URL;
+		$service_url =  'https://'.self::URL;
 		$service_url .= $this->getApiVersion();
 		
 		$headers = array();
